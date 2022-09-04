@@ -30,7 +30,6 @@ class Matrix {
 
     for (let i = 0, num = 0, rowsLength = 0, indexCounter = 0; i < final.length; i++) {
       num = parseInt(final[i]);
-      //console.log(num, i);
 
       if (/\n|\r|\r\n/.test(final[i])) {
         newLine = true;
@@ -60,7 +59,6 @@ class Matrix {
         newLine = false;
       }
     }
-    //console.log(newLineCounter);
   }
 
   get rows(): number[][] {
@@ -71,8 +69,3 @@ class Matrix {
     return this.colum;
   }
 }
-
-//const mat = new Matrix('89 1903 3\n18 3 1\n9 4 800');
-
-//console.log(mat.rows);
-//console.log(mat.columns);
